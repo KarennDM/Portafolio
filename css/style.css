@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Chivo", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS DE LA CABECERA */
+
+header{
+    padding-top: 150px;
+    background: url(../img/bg-principal2.jpg) !important;
+}
+nav{
+    background: #a67d8fb2;
+}
+
+header nav.bg-portafolio{
+    padding-top: 20px;
+}
+
+nav.bg-portafolio{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    top: 20px;
+}
+
+nav .navbar-brand img{
+    width: 80px;
+    margin-left: 400px;
+    margin-right: 30px;
+}
+
+nav.bg-portafolio ul li{
+    margin-top: 14px;
+    
+}
+
+.navbar-nav .nav-link.active{
+    color: #f4f0f0;
+    text-decoration: none;
+}
+
+nav.bg-portafolio ul li a{
+    color: #f0ebeb;
+    position: relative;
+    font-size: 15px;
+    margin: 0 12px;
+    background: #d27bfd80;
+}
+
+#personal{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 40px 0 100px;
+    color:#ffffff
+}
+
+#personal .carousel-item{
+    background: url(../img/bg-principal.jpg);
+    padding: 120px 40px;
+    border-radius: 10px;
+}
+
+div.carousel-item.active{
+    background: transparent !important;
+    z-index: 3;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    width: 30%;
+    text-align: center;
+    padding: 0;
+    color: #ffffff; 
+    z-index: 5; 
+}
+
+.carousel-caption h2{
+    position: absolute;
+    text-align: center; 
+    top: -210px;
+    background-color: rgba(252, 160, 254, 0.489); 
+    color: #ffffff; 
+    font-size: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slogan h1{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+
+}
+
+/* ESTILOS PRESENTACION PERSONAL */
+  
+#presentacion{
+    padding: 160px 0;
+    position: relative;
+    background: linear-gradient(to bottom, #EBC29A, #899DD1);
+}
+
+#presentacion .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+#presentacion  .cont-foto {
+    justify-self: center;
+}
+
+#presentacion .cont-info{
+    padding-left: 60px;
+    top: -500px;
+    justify-content: center;
+}
+
+#presentacion .cont-info h2{
+    color: #ffff;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    
+}
+
+#presentacion .cont-info p{
+    color: #ffff;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+#presentacion .cont-foto img{
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 7px 7px 10px #444444, -7px -7px 10px #444444;
+}
+
+#presentacion .cont-foto .imgcont1{
+    position: relative;
+    top: -100px;
+    left: 100px;
+    box-shadow: 7px 7px 10px #444444, -7px -7px 10px #44444459;
+    
+}
+
+
+
+/* ESTILOS DE LOS HOBBIES */
+
+#hobbies {
+    padding: 160px 0;
+    position: relative;
+    background: url(../img/bg-hobbies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hobbies .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#hobbies h2{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 100px;
+}
+
+#hobbies .cont-info h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+    margin-top: 70px;
+}
+
+#hobbies .cont-info p{
+    text-align: center;
+    color: #080808;
+    font-size: 20px;
+    margin-bottom: 50px;
+    background: #dcacf479;
+    border-radius: 7px;
+}
+
+#hobbies .cont-foto img{
+    border-radius: 700px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px #899DD1, -10px -10px 20px #899DD1;
+}
+
+#hobbies .cont-foto img{
+    transition: .5s;
+}
+
+#hobbies .cont-foto img:hover{
+    transform: scale(1.1);
+    z-index: 24;
+    box-shadow: 10px 10px 20px #DCACF4, -10px -10px 20px #DCACF4;
+}
+
+
+/* ESTILOS DEL PERFIL LABORAL */
+
+#laboral{
+    padding: 160px 0;
+    position: relative;
+    background: linear-gradient(to bottom, #899DD1, #EBC29A);
+}
+
+#laboral .carousel-item{
+    padding: 120px 40px;
+    border-radius: 10px;
+}
+
+div.carousel-item.active{
+    background: transparent !important;
+    z-index: 3;
+}
+
+#laboral .container h2{
+    font-size: 45px;
+    text-align: center;
+}
+#laboral .texto{
+    background: #ebc39aa1;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+.texto p{
+    position: relative;
+    text-align: center; 
+    padding: 0;
+    color: #000000; 
+    font-size: 20px;
+    margin-top: -50px;
+}
+
+/* ESTILOS DE PROYECTOS */
+
+#proyectos{
+    padding: 160px 0;
+    position: relative;
+    background: linear-gradient(to bottom, #EBC29A , #899DD1);
+}
+
+#proyectos h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+#proyectos .textos a{
+    border-radius: 4px;
+    background: #DCACF4;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#proyectos .textos h3{
+    text-align: center;
+}
+
+#proyectos .container{
+    text-align: center;
+}
+
+#proyectos .cont-foto img{
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px #c785f9, -10px -10px 20px #DCACF4;
+}
+
+#proyectos .cont-foto img{
+    transition: .5s;
+}
+
+#proyectos .cont-foto img:hover{
+    transform: scale(1.1);
+    z-index: 24;
+    box-shadow: 10px 10px 20px #DCACF4, -10px -10px 20px #DCACF4;
+}
+
+
+
+/* ESTILOS PELIS Y SERIES */
+
+#pelisSeries {
+    padding: 80px 0;
+    position: relative;
+    background: url(../img/bg-proyecto2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#pelisSeries h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#pelisSeries .cont-info{
+    text-align: center;
+    color: #000;
+    margin-top: 60px;
+}
+
+#pelisSeries #logo{
+    position: relative;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+#pelisSeries a{
+    border-radius: 5px;
+    background: #DCACF4;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ESTILOS DELIVERY */
+
+#delivery {
+    padding: 80px 0;
+    position: relative;
+    background: url(../img/bg-proyecto1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#delivery h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#delivery .cont-info{
+    text-align: center;
+    color: #000000;
+    margin-top: 70px;
+}
+
+#delivery #logo{
+    position: relative;
+    bottom: 120px;
+    left: 1100px;
+    cursor: pointer;
+}
+
+#delivery a{
+    border-radius: 5px;
+    background: #b87ed4;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ESTILOS FOOTER */
+
+#contactos{
+    background: linear-gradient(to bottom, #D39496, #737373);
+    text-align: center;
+    padding: 20px;
+}
